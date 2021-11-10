@@ -1,7 +1,8 @@
 /*
 Finding Nemo
 
-You're given a string of words. You need to find the word "Nemo", and return a string like this: "I found Nemo at [the order of the word you find nemo]!".
+You're given a string of words. You need to find the word "Nemo", and return a string like this: 
+"I found Nemo at [the order of the word you find nemo]!".
 
 If you can't find Nemo, return "I can't find Nemo :(".
 Examples
@@ -23,12 +24,8 @@ URL: https://edabit.com/challenge/c23dFfNiKbnguSQtq
 
 */
 
-function findNemo(texto){
+const findNemo = texto => texto.split(" ").indexOf('Nemo') > -1 ? `I found Nemo at ${texto.split(" ").indexOf('Nemo')+1}!` : "I can't find Nemo :("
 
-    
-
-
-}
 
 console.log(findNemo("I am finding Nemo !"))// "I found Nemo at 4!"
 
