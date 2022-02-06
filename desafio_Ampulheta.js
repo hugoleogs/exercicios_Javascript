@@ -1,4 +1,4 @@
-// console.log("Calculo da Ampulheta")
+ console.log("Calculo da Ampulheta")
 
 console.log("Favor, digite o valor de 'n': ")
 process.stdin.on('data', data => {
